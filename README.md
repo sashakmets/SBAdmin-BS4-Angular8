@@ -55,3 +55,44 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ### Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+Структура проекта:
+
+    .
+    └── src                                     # Папка исходников
+        │
+        │
+        ├── app                                 # Серверная часть приложения
+        │   ├── layout
+        │   │   ├── components
+        │   │   │   ├── header                  # Общие элементы для каждой страницы...
+        │   │   │   └── sidebar
+        │   │   ├── dashboard1                  # Страницы представленные пользователю...
+        │   │   ├── dashboard2
+        │   │   ├── dashboard3
+        │   │   ├── layout.component.html
+        │   │   ├── layout.component.css
+        │   │   └── layout.component.ts
+        │   ├── login                           # Специальные страницы...
+        │   │   ├── login.component.html
+        │   │   ├── login.component.css
+        │   │   └── login.component.ts
+        │   ├── signup
+        │   │   ├── signup.component.html
+        │   │   ├── signup.component.css
+        │   │   └── signup.component.ts
+        │   └── not-found
+        │       ├── not-found.component.html
+        │       ├── not-found.component.css
+        │       └── not-found.component.ts
+        ├── assets                              # Ресурсы (картинки,языки)
+        │   ├── i18n
+        │   │   └── en.json
+        │   ├── images
+        │   │   └── logo.png
+        ├── styles                              # Стили
+        │   ├── bootstrap
+        │   │   └── *.css
+        │   └── main.css                        # Основной стиль для всего приложения
+        └── index.html                          # Главная страница
