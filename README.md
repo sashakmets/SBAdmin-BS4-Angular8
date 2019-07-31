@@ -6,6 +6,45 @@
 * Этот проект был создан с помощью [Angular CLI версии 8.0.0](https://github.com/angular/angular-cli)
 * Демо: [SB Admin BS4 Angular5](http://rawgit.com/start-angular/SB-Admin-BS4-Angular-6/master/dist/) **(** [StartAngular](http://startangular.com/) и [StrapUI](http://strapui.com/) **)**
 
+### Структура проекта
+
+    .
+    └── src                                     # Папка исходников
+        │
+        │
+        ├── app                                 # Серверная часть приложения
+        │   ├── layout
+        │   │   ├── components
+        │   │   │   ├── header                  # Общие элементы для каждой страницы...
+        │   │   │   └── sidebar
+        │   │   ├── dashboard1                  # Страницы представленные пользователю...
+        │   │   ├── dashboard2
+        │   │   ├── dashboard3
+        │   │   ├── layout.component.html
+        │   │   ├── layout.component.css
+        │   │   └── layout.component.ts
+        │   ├── login                           # Специальные страницы...
+        │   │   ├── login.component.html
+        │   │   ├── login.component.css
+        │   │   └── login.component.ts
+        │   ├── signup
+        │   │   ├── signup.component.html
+        │   │   ├── signup.component.css
+        │   │   └── signup.component.ts
+        │   └── not-found
+        │       ├── not-found.component.html
+        │       ├── not-found.component.css
+        │       └── not-found.component.ts
+        ├── assets                              # Ресурсы (картинки,языки)
+        │   ├── i18n
+        │   │   └── en.json
+        │   ├── images
+        │   │   └── logo.png
+        ├── styles                              # Стили
+        │   ├── bootstrap
+        │   │   └── *.css
+        │   └── main.css                        # Основной стиль для всего приложения
+        └── index.html                          # Главная страница
 
 ### Introduction
 
@@ -51,43 +90,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
-
-### Структура проекта
-
-    .
-    └── src                                     # Папка исходников
-        │
-        │
-        ├── app                                 # Серверная часть приложения
-        │   ├── layout
-        │   │   ├── components
-        │   │   │   ├── header                  # Общие элементы для каждой страницы...
-        │   │   │   └── sidebar
-        │   │   ├── dashboard1                  # Страницы представленные пользователю...
-        │   │   ├── dashboard2
-        │   │   ├── dashboard3
-        │   │   ├── layout.component.html
-        │   │   ├── layout.component.css
-        │   │   └── layout.component.ts
-        │   ├── login                           # Специальные страницы...
-        │   │   ├── login.component.html
-        │   │   ├── login.component.css
-        │   │   └── login.component.ts
-        │   ├── signup
-        │   │   ├── signup.component.html
-        │   │   ├── signup.component.css
-        │   │   └── signup.component.ts
-        │   └── not-found
-        │       ├── not-found.component.html
-        │       ├── not-found.component.css
-        │       └── not-found.component.ts
-        ├── assets                              # Ресурсы (картинки,языки)
-        │   ├── i18n
-        │   │   └── en.json
-        │   ├── images
-        │   │   └── logo.png
-        ├── styles                              # Стили
-        │   ├── bootstrap
-        │   │   └── *.css
-        │   └── main.css                        # Основной стиль для всего приложения
-        └── index.html                          # Главная страница
